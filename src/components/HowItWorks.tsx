@@ -1,0 +1,74 @@
+import { CheckCircle2, CreditCard, TrendingUp, Wallet } from "lucide-react";
+
+const steps = [
+  {
+    icon: CreditCard,
+    title: "Choose Your Plan",
+    description: "Select the account size that matches your trading goals and pay the one-time fee.",
+  },
+  {
+    icon: CheckCircle2,
+    title: "Instant Evaluation",
+    description: "Get immediate access to your funded account. No waiting, no delays.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Trade & Profit",
+    description: "Start trading with no time limits. Prove your consistency and skill.",
+  },
+  {
+    icon: Wallet,
+    title: "Get Paid",
+    description: "Request payouts anytime. Receive your earnings within 24 hours.",
+  },
+];
+
+export const HowItWorks = () => {
+  return (
+    <section className="py-24 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSg1OSwgMTMwLCAyNDYsIDAuMSkiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-10"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-glow">
+            How It <span className="gradient-primary bg-clip-text text-transparent">Works</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Four simple steps to start earning as a funded trader
+          </p>
+        </div>
+
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+            {/* Connection line for desktop */}
+            <div className="hidden lg:block absolute top-20 left-0 right-0 h-0.5 bg-gradient-to-r from-primary via-secondary to-primary opacity-30"></div>
+            
+            {steps.map((step, index) => {
+              const Icon = step.icon;
+              return (
+                <div
+                  key={index}
+                  className="relative"
+                  style={{ animationDelay: `${index * 0.2}s` }}
+                >
+                  <div className="glass-card p-6 rounded-2xl card-3d text-center relative z-10">
+                    <div className="w-16 h-16 rounded-full bg-gradient-primary flex items-center justify-center mx-auto mb-6 glow-primary">
+                      <Icon className="w-8 h-8 text-white" />
+                    </div>
+                    <div className="text-4xl font-bold gradient-primary bg-clip-text text-transparent mb-3">
+                      {String(index + 1).padStart(2, '0')}
+                    </div>
+                    <h3 className="text-xl font-bold mb-3">{step.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
