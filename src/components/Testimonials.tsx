@@ -31,8 +31,8 @@ export const Testimonials = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-glow">
-            Trusted by <span className="gradient-primary bg-clip-text text-transparent">15,000+ Traders</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Trusted by <span className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">15,000+ Traders</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             See what our funded traders are saying
@@ -57,7 +57,7 @@ export const Testimonials = () => {
               </p>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-primary flex items-center justify-center font-bold glow-primary">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center font-bold glow-primary">
                   {testimonial.avatar}
                 </div>
                 <div>
@@ -73,12 +73,12 @@ export const Testimonials = () => {
           <div className="glass-card inline-block px-8 py-4 rounded-full">
             <div className="flex items-center gap-8">
               <div>
-                <div className="text-3xl font-bold gradient-primary bg-clip-text text-transparent">4.9/5</div>
+                <span className="inline-block text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">4.9/5</span>
                 <div className="text-sm text-muted-foreground">Average Rating</div>
               </div>
               <div className="w-px h-12 bg-border"></div>
               <div>
-                <div className="text-3xl font-bold gradient-primary bg-clip-text text-transparent">2,500+</div>
+                <span className="inline-block text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">2,500+</span>
                 <div className="text-sm text-muted-foreground">Reviews</div>
               </div>
             </div>

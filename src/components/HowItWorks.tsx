@@ -30,8 +30,8 @@ export const HowItWorks = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-glow">
-            How It <span className="gradient-primary bg-clip-text text-transparent">Works</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            How It <span className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Works</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Four simple steps to start earning as a funded trader
@@ -52,12 +52,12 @@ export const HowItWorks = () => {
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   <div className="glass-card p-6 rounded-2xl card-3d text-center relative z-10">
-                    <div className="w-16 h-16 rounded-full bg-gradient-primary flex items-center justify-center mx-auto mb-6 glow-primary">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center mx-auto mb-6 glow-primary">
                       <Icon className="w-8 h-8 text-white" />
                     </div>
-                    <div className="text-4xl font-bold gradient-primary bg-clip-text text-transparent mb-3">
+                    <span className="inline-block text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-3">
                       {String(index + 1).padStart(2, '0')}
-                    </div>
+                    </span>
                     <h3 className="text-xl font-bold mb-3">{step.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       {step.description}

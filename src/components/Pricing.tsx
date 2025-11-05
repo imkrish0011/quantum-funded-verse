@@ -53,8 +53,8 @@ export const Pricing = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-glow">
-            Choose Your <span className="gradient-primary bg-clip-text text-transparent">Challenge</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Choose Your <span className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Challenge</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Scale up as you prove your skills. All plans include instant evaluation and no time limits.
@@ -72,7 +72,7 @@ export const Pricing = () => {
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <div className="bg-gradient-primary px-6 py-2 rounded-full text-sm font-semibold">
+                  <div className="bg-gradient-to-r from-primary to-secondary px-6 py-2 rounded-full text-sm font-semibold">
                     Most Popular
                   </div>
                 </div>
@@ -80,9 +80,9 @@ export const Pricing = () => {
 
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
-                <div className="text-5xl font-bold gradient-primary bg-clip-text text-transparent mb-2">
+                <span className="inline-block text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">
                   {plan.price}
-                </div>
+                </span>
                 <div className="text-muted-foreground">One-time fee</div>
                 <div className="mt-4 text-2xl font-semibold text-secondary">
                   {plan.capital}

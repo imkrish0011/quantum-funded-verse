@@ -40,8 +40,8 @@ export const Features = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-glow">
-            Why Choose <span className="gradient-primary bg-clip-text text-transparent">PropTrader Pro</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Why Choose <span className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">PropTrader Pro</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             The most advanced prop trading platform designed for serious traders
@@ -57,7 +57,7 @@ export const Features = () => {
                 className="glass-card p-8 rounded-2xl card-3d group"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-14 h-14 rounded-xl bg-gradient-primary flex items-center justify-center mb-6 glow-primary group-hover:scale-110 transition-transform">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-primary to-secondary flex items-center justify-center mb-6 glow-primary group-hover:scale-110 transition-transform">
                   <Icon className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-2xl font-bold mb-3">{feature.title}</h3>

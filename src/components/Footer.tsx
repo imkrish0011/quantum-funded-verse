@@ -9,8 +9,8 @@ export const Footer = () => {
       {/* CTA Section */}
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-glow">
-            Ready to Get <span className="gradient-primary bg-clip-text text-transparent">Funded?</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Ready to Get <span className="inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Funded?</span>
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
             Join 15,000+ traders who are already earning with PropTrader Pro
@@ -73,7 +73,7 @@ export const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <div>
-            <span className="font-bold text-2xl gradient-primary bg-clip-text text-transparent">PropTrader Pro</span>
+            <span className="font-bold text-2xl inline-block bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">PropTrader Pro</span>
             <p className="mt-1">© 2025 All rights reserved.</p>
           </div>
           <div className="flex gap-6">
