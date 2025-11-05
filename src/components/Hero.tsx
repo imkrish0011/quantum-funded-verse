@@ -30,9 +30,9 @@ export const Hero = () => {
           </div>
 
           {/* Main heading with glow effect */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-glow animate-slide-up">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-slide-up">
             Get Funded
-            <span className="block gradient-primary bg-clip-text text-transparent">
+            <span className="block mt-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Instantly
             </span>
           </h1>
@@ -65,7 +65,7 @@ export const Hero = () => {
                 className="glass-card p-6 rounded-2xl card-3d animate-slide-up"
                 style={{ animationDelay: stat.delay }}
               >
-                <div className="text-3xl md:text-4xl font-bold text-glow gradient-primary bg-clip-text text-transparent mb-2">
+                <div className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   {stat.value}
                 </div>
                 <div className="text-sm text-muted-foreground uppercase tracking-wider">
